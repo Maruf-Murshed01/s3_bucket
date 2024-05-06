@@ -4,9 +4,9 @@ const { randomBytes } = require('crypto'); // Import randomBytes function from c
 dotenv.config();
 
 const region = "eu-west-2";
-const bucketName = process.env.bucketName;
-const accessKeyId = process.env.accessKeyId; // Corrected typo in variable name
-const secretAccessKey = process.env.secretAccessKey;
+const bucketName = process.env.xbucketName;
+const accessKeyId = process.env.xaccessKeyId; // Corrected typo in variable name
+const secretAccessKey = process.env.xsecretAccessKey;
 
 const s3 = new aws.S3({
   region: region,
